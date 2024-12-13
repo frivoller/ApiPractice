@@ -1,13 +1,96 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ünlü Kişiler</title>
+</head>
+<body>
+    <h1>Ünlü Kişiler</h1>
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <ul id="kisiler"></ul>
 
-  <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
-  </ItemGroup>
+    <script>
+        let ulKisiler = document.getElementById("kisiler    <Folder Include="OrnekUygulama\" />
+);
 
-</Project>
+        fetch("https://localhost:7023/api/Kisiler")
+        .then(res => res.json())
+        .then(dizi => {
+            console.log(dizi);
+            for (let insan of dizi) {
+                ulKisiler.innerHTML += "<li>" + insan.ad + "</li>";
+            }
+        });
+    </script>
+</body>
+</html>	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Ünlü Kişiler</title>
+			</head>
+	<body>
+		<h1>Ünlü Kişiler</h1>
+
+		<ul id="kisiler"></ul>
+
+		<script>
+			let ulKisiler = document.getElementById("kisiler");
+
+			fetch("https://localhost:7023/api/Kisiler")
+			.then(res => res.json())
+			.then(dizi => {
+			console.log(dizi);
+			for (let insan of dizi) {
+			ulKisiler.innerHTML += "<li>" + insan.ad + "</li>";
+			}
+			});
+		</script>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ünlü Kişiler</title>
+</head>
+<body>
+    <h1>Ünlü Kişiler</h1>
+
+    <ul id="kisiler"></ul>
+
+    <script>
+        let ulKisiler = document.getElementById("kisiler");
+
+        fetch("https://localhost:7023/api/Kisiler")
+        .then(res => res.json())
+        .then(dizi => {
+            console.log(dizi);
+            for (let insan of dizi) {
+                ulKisiler.innerHTML += "<li>" + insan.ad + "</li>";
+            }
+        });
+    </script>
+</body>
+</html>	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Ünlü Kişiler</title>
+			</head>
+	<body>
+		<h1>Ünlü Kişiler</h1>
+
+		<ul id="kisiler"></ul>
+
+		<script>
+			let ulKisiler = document.getElementById("kisiler");
+
+			fetch("https://localhost:7023/api/Kisiler")
+			.then(res => res.json())
+			.then(dizi => {
+			console.log(dizi);
+			for (let insan of dizi) {
+			ulKisiler.innerHTML += "<li>" + insan.ad + "</li>";
+			}
+			});
+		</script>
+	
